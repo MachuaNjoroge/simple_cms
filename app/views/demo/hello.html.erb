@@ -1,0 +1,21 @@
+<h1> Hello page </h1>
+
+<%= link_to('index',{:action =>'index', :page => 5, :id => 20}) %></br>
+
+<% 5.times do |dd|%>
+    <%= dd %> <span></span><%= 1+1 %><br/>
+    
+<% end %>
+
+<br/>
+<% @test.each do |dd|%>
+    <%= dd %> <span></span><%= 1+1 %><br/>
+    
+<% end %>
+
+<br/>
+
+
+<% @test.each do |test| %>
+    <% test %><br/>
+    <% end %>
